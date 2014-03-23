@@ -1,34 +1,14 @@
+/*
+HTML
+ */
 html{
 	padding: 0;
 	margin: 0;
 }
 
-img {
-	display: block;
-	min-height: 400px;
-	min-width: (1000px * .8);
-    max-width: 100%;
-    height: auto;
-}
-
-img.share_icons{
-	display: inline;
-	margin: 10px;
-	padding: 6px;
-	min-height: 40px;
-	min-width: 40px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-span#share_span{
-	text-align: right;
-	width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
-}
-
+/*
+TEXT
+ */
 body{
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
 	padding: 0 0px;
@@ -41,6 +21,64 @@ body{
 	background-image: url('../images/tileable_wood_texture.png');
 }
 
+h1{
+	font-family: 'Swanky and Moo Moo', cursive, "Lucida Grande";
+	text-align: left;
+	text-decoration: underline;
+	font-size: 2em;
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: rgb(247,120,37);
+}
+
+p{
+	margin: 0;
+	margin-top: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*
+IMAGES
+ */
+img {
+	display: block;
+	min-height: 400px;
+	min-width: (1000px * .8);
+    max-width: 100%;
+    height: auto;
+}
+
+img.share_icons{
+	display: inline;
+	width: 50px;
+	height: 50px;
+	min-height: 0px;
+	min-width: 0px;
+}
+
+img.inline_image_left{
+	margin: 0px;
+	padding: 20px;
+	padding-bottom: 5px;
+	height: 400px;
+	width: auto;
+	float: left;
+}
+
+img.inline_image_right{
+	margin: 0px;
+	padding: 20px;
+	padding-bottom: 5px;
+	height: 400px;
+	width: auto;
+	float: right;
+}
+
+/*
+LISTS
+ */
 ul#navigation{
 	margin: 0px;
 	padding: 0px;
@@ -74,13 +112,17 @@ li div img{
 }
 
 li{
+	color: rgb(211,206,61);
 	display: table-cell;
 	list-style-type: none;
 	font-family: 'Swanky and Moo Moo', cursive;
-	font-size: 28;
+	font-size: 24;
+	/*
+	i like font-weight: 100;
+	 */
 	font-weight: bold;
 	padding: 0 0 0 0;
-	width: 180px;
+	width: 20%;
 	margin: 0;
 	/* need to add multi defs for different browsers */
 	-moz-transition-property: background-color;
@@ -96,12 +138,11 @@ li{
 }
 
 li.active{
-	color: rgb(211,206,61);
 	background-color: rgb(247,120,37);
+	text-decoration: underline;
 }
 
 li.nonactive{
-	color: rgb(211,206,61);
 	background-color: rgb(85,66,54);
 }
 
@@ -109,30 +150,24 @@ li:hover {
   background-color: rgb(247,120,37);
 }
 
-h1{
-	font-family: 'Swanky and Moo Moo', cursive, "Lucida Grande";
-	text-align: left;
-	text-decoration: underline;
-	font-size: 2em;
-	margin-top: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
-	color: rgb(247,120,37);
-}
-
-p{
-	margin: 0;
-	margin-top: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
+/*
+DIVS
+ */
 div#container{
 	text-align: center;
 	width: 80%;
-	height: 400px;
+	height: auto;
 	margin: 0 auto;
 	background-color: #1B1914;
+	box-shadow: 7px 0px 9px -5px #999, -7px 0px 9px -5px #999;
+}
+
+div#divnav{
+	text-align: center;
+	width: 100%;
+	background-color: rgb(85,66,54);
+	margin: 0;
+	padding: 0;
 }
 
 div#heading{
@@ -146,23 +181,6 @@ div#heading{
 	margin: 0;
 }
 
-div#divnav{
-	text-align: center;
-	width: 100%;
-	background-color: rgb(85,66,54);
-	margin: 0;
-	padding: 0;
-}
-
-div#bottom_frame{
-	/*background-color: rgb(96,185,154);*/
-	background-image: url('../images/green_cup.png');
-	text-align: left;
-	padding: 80px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
 div#main_content{
 	/*background-image: url('../images/textured_paper.png');*/
 	/*background-image: url('../images/old_moon.png');*/
@@ -172,5 +190,36 @@ div#main_content{
 	width: (100% - (padding * 2)px);
 	padding: 80px;
 	padding-top: 10px;
+	padding-bottom: 20px;
+	overflow: auto;
+}
+
+div#bottom_frame{
+	background-image: url('../images/green_cup.png');
+	font-size: 18;
+	text-align: left;
+	vertical-align: middle;
+	overflow: hidden;
+	padding: 10px;
+	height: 200px;
+	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+div#bottom_content{
+	float: left;
+	text-align: left;
+	line-height: 20px;
+	width: 49%;
+	height: 100%; 
+	border-right : 1pt dashed black;
+}
+
+div#bottom_share{
+	float: right;
+	vertical-align: middle;
+	text-align: center;
+	width: 49%; 
+	height: 100%;
+	line-height: 240px;
 }
