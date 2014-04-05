@@ -26,9 +26,20 @@ body{
 h1{
 	font-family: 'Swanky and Moo Moo', cursive, "Lucida Grande";
 	text-align: left;
-	text-decoration: underline;
 	font-size: 2em;
 	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: rgb(247,120,37);
+}
+
+h2{
+	font-family: 'Swanky and Moo Moo', cursive, "Lucida Grande";
+	text-align: left;
+	font-size: 1.6em;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding-left: 5px;
 	padding-right: 5px;
 	color: rgb(247,120,37);
@@ -39,6 +50,10 @@ p{
 	margin-top: 15px;
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+p.button_paragraph{
+	text-align: center;
 }
 
 /*
@@ -63,7 +78,9 @@ img.share_icons{
 img.inline_image_left{
 	margin: 0px;
 	padding: 20px;
+	/*
 	padding-bottom: 5px;
+	*/
 	height: 400px;
 	width: auto;
 	float: left;
@@ -72,10 +89,19 @@ img.inline_image_left{
 img.inline_image_right{
 	margin: 0px;
 	padding: 20px;
+	/*
 	padding-bottom: 5px;
+	*/
 	height: 400px;
 	width: auto;
 	float: right;
+}
+
+img.product_image_centre{
+	margin: 0 auto;
+	padding: 20px;
+	height: 400px;
+	width: auto;
 }
 
 /*
@@ -119,9 +145,6 @@ li{
 	list-style-type: none;
 	font-family: 'Swanky and Moo Moo', cursive;
 	font-size: 24;
-	/*
-	i like font-weight: 100;
-	 */
 	font-weight: bold;
 	padding: 0 0 0 0;
 	width: 16.666%;
@@ -142,7 +165,7 @@ li{
 li.active{
 	background-color: rgb(247,120,37);
 	text-decoration: underline;
-	color: rgb(255,255,255);
+	color: rgb(240,240,240);
 }
 
 li.nonactive{
@@ -151,6 +174,65 @@ li.nonactive{
 
 li:hover {
 	background-color: rgb(247,120,37);
+}
+
+/*
+Feilds
+ */
+fieldset{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px dashed black;
+}
+
+fieldset p{
+	clear: both;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+/*
+Labels
+ */
+label.feild_label{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: boarder-box;
+	text-align: right;
+	width: 42%;
+	float: left;
+	padding: 8px;
+}
+
+/*
+Inputs
+ */
+input.input_text{
+	width: 58%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 24;
+	padding: 6px;
+	float: left;
+	text-align: left;
+}
+
+button.input_submit{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 24;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+textarea{
+	resize: none;
+	width: 100%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 24;
+	text-align: left;
+	float: left;
 }
 
 /*
@@ -205,6 +287,40 @@ div#main_content{
 	padding-top: 10px;
 	padding-bottom: 20px;
 	overflow: auto;
+}
+
+div#form_div{
+	margin: 0 auto;
+}
+
+div#productdiv{
+	border-top: 1px dashed black;
+	overflow: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+div#productcontent{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: boarder-box;
+	float: left;
+	margin: 0;
+	padding-right: 20px;
+	width: 60%;
+}
+
+div#productimage{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: boarder-box;
+	background: rgb(255,255,255);
+	float: right;
+	width: 40%;
 }
 
 div#bottom_frame{

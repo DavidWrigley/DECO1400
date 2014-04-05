@@ -17,7 +17,7 @@
 			<div id='divnav'>
 				<!-- add a list element -->
 				<ul id='navigation'>
-					<li class='active' class='hoverable'>
+					<li class='nonactive' class='hoverable' onclick="javascript:location.href='index.html'">
 						<div>Home</div>
 					</li>
 					<li class='nonactive' class='hoverable' onclick="javascript:location.href='drinks.html'">
@@ -32,7 +32,7 @@
 					<li class='nonactive' class='hoverable'>
 						<div>Acts</div>
 					</li>
-					<li class='nonactive' class='hoverable' onclick="javascript:location.href='contact.html'">
+					<li class='active' class='hoverable'>
 						<div>Contact</div>
 					</li>
 				</ul>
@@ -44,21 +44,40 @@
 			<!-- main webpage content -->
 			<div id='main_content'>
 				<!-- Heading -->
-				<h1>Home</h1>
+				<h1>Contact Us!</h1>
+				<!-- Info -->
+				<p>Here at "The Gnome" we want to hear your feedback, please fill in the subject box with the details of your message, for example, a new band for us to sign or a suggestion for the infusion competition.</p>
+				<br>
 
-				<!--Content-->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae sem lobortis, convallis mauris a, ultricies velit. Nulla facilisi. Integer ut odio eleifend, suscipit elit iaculis, sollicitudin diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla in erat feugiat, feugiat massa quis, feugiat massa. Sed eu magna dapibus, adipiscing tortor in, cursus velit. Fusce sed leo non est consequat posuere vel sit amet metus. Nulla nec suscipit mauris.</p>
-
-				<!-- Inline Image -->
-				<img class='inline_image_left' src='./images/Mascot.jpg'>
-				<p>Fusce rhoncus commodo euismod. Vestibulum eu imperdiet nulla, et dapibus massa. Praesent tristique auctor massa, vehicula posuere risus interdum vel. Nullam posuere sem nec risus pharetra posuere. Aenean leo velit, pharetra ut nunc nec, semper interdum mauris. Donec rhoncus lorem quam, a sollicitudin neque molestie nec.</p>
-
-				<!-- Inline Image -->
-				<!--
-				<img class='inline_image_right' src='./images/7_garden_gnomes.jpg'>
-				
-				<p>Duis et feugiat ligula, vitae vestibulum ante. Mauris tristique quis elit blandit ornare. Vivamus eu velit sed quam tristique imperdiet. Curabitur ac massa in enim condimentum ornare. Donec vel felis varius, interdum eros quis, condimentum quam. Nunc consequat ipsum sagittis turpis ultrices dictum. Suspendisse vitae leo libero.</p>
-				-->
+				<!-- Form -->
+				<div id='form_div'>
+					<form action='./submit.php' method='get'>
+						<fieldset>
+							<p>
+							<label class='feild_label'>First Name: </label>
+							<input name='firstName' type='text' id='firstName' class='input_text' placeholder='John'>
+							</p>
+							<p>
+							<label class='feild_label'>Last Name: </label>
+							<input name='lastName' type='text' id='lastName' class='input_text' placeholder='Smith'>
+							</p>
+							<p>
+							<label class='feild_label'>Return Address: </label>
+							<input name='userAddress' type='text' id='userAddress' class='input_text' placeholder='j.smith@hotmail.com'>
+							</p>
+							<p>
+							<label class='feild_label'>Subject: </label>
+							<input name='subject' type='text' id='subject' class='input_text' placeholder='Infusion Idea'>
+							</p>
+							<p>
+							<textarea name="content" rows='6' cols='60' placeholder='Write your message here. Then click the Submit button.'></textarea>
+							</p>
+							<p class='button_paragraph'>
+							<button type="submit" class='input_submit'>Submit</button>
+							</p>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 			<!-- Bottom Frame, maybe Facebook, twitter, Google+, Contact us -->
 			<div id='bottom_frame'>

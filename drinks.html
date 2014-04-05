@@ -17,10 +17,10 @@
 			<div id='divnav'>
 				<!-- add a list element -->
 				<ul id='navigation'>
-					<li class='active' class='hoverable'>
+					<li class='nonactive' class='hoverable' onclick="javascript:location.href='index.html'">
 						<div>Home</div>
 					</li>
-					<li class='nonactive' class='hoverable' onclick="javascript:location.href='drinks.html'">
+					<li class='active' class='hoverable'>
 						<div>Drinks</div>
 					</li>
 					<li class='nonactive' class='hoverable'>
@@ -44,21 +44,37 @@
 			<!-- main webpage content -->
 			<div id='main_content'>
 				<!-- Heading -->
-				<h1>Home</h1>
+				<h1>Drinks</h1>
+				<!-- Product div, this should be replicated for each new product added -->
+				<div id='productdiv'>
+					<!-- Product Content -->
+					<div id='productcontent'>
+						<h2>Two Birds Golden Ale</h2>
+						<p>Two Birds Golden Ale is brewed using ale, wheat and Vienna malts. It is bittered with New Zealand Southern Cross hops while Motueka and Australian Summer hops are used for aroma. Motueka contributes melon and citrus aromas and flavours, while Summer contributes spice and apricot notes.</p>
+						<h2>Cost: $9</h2>
+					</div>
+					<!-- Product Image -->
+					<div id='productimage'>
+						<img class='product_image_centre' src="./images/905522_6_9999_v1_m56577569839555178.jpg">
+					</div>
+				</div>
 
-				<!--Content-->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae sem lobortis, convallis mauris a, ultricies velit. Nulla facilisi. Integer ut odio eleifend, suscipit elit iaculis, sollicitudin diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla in erat feugiat, feugiat massa quis, feugiat massa. Sed eu magna dapibus, adipiscing tortor in, cursus velit. Fusce sed leo non est consequat posuere vel sit amet metus. Nulla nec suscipit mauris.</p>
-
-				<!-- Inline Image -->
-				<img class='inline_image_left' src='./images/Mascot.jpg'>
-				<p>Fusce rhoncus commodo euismod. Vestibulum eu imperdiet nulla, et dapibus massa. Praesent tristique auctor massa, vehicula posuere risus interdum vel. Nullam posuere sem nec risus pharetra posuere. Aenean leo velit, pharetra ut nunc nec, semper interdum mauris. Donec rhoncus lorem quam, a sollicitudin neque molestie nec.</p>
-
-				<!-- Inline Image -->
-				<!--
-				<img class='inline_image_right' src='./images/7_garden_gnomes.jpg'>
-				
-				<p>Duis et feugiat ligula, vitae vestibulum ante. Mauris tristique quis elit blandit ornare. Vivamus eu velit sed quam tristique imperdiet. Curabitur ac massa in enim condimentum ornare. Donec vel felis varius, interdum eros quis, condimentum quam. Nunc consequat ipsum sagittis turpis ultrices dictum. Suspendisse vitae leo libero.</p>
-				-->
+				<div id='productdiv'>
+					<div id='productcontent'>
+						<h2>Monster Mash IIPA</h2>
+						<p>500ml Bottle. Red honey/amber colour with the a faint brown tint. Pours a frothy, off white head, dissipating to a thin but excellently laced head. Strong citrus like aromas of grapefruit and orange, with notes of pine, nectarines and spices. Initial taste of a bitter caramel malt flavour with hints of peach and pine, very smooth. Finish is a piney/citrus flavour and very bitter.</p>
+						<h2>Cost: $12</h2>
+					</div>
+					<div id='productimage'>
+						<img class='product_image_centre' src="./images/IPA.png">
+					</div>
+				</div>
+				<div id='productdiv'>
+					<div id='productcontent'>
+					</div>
+					<div id='productimage'>
+					</div>
+				</div>
 			</div>
 			<!-- Bottom Frame, maybe Facebook, twitter, Google+, Contact us -->
 			<div id='bottom_frame'>
