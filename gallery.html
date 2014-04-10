@@ -17,7 +17,7 @@
 			<div id='divnav'>
 				<!-- add a list element -->
 				<ul id='navigation'>
-					<li class='active' class='hoverable'>
+					<li class='nonactive' class='hoverable'  onclick="javascript:location.href='index.html'">
 						<div>Home</div>
 					</li>
 					<li class='nonactive' class='hoverable' onclick="javascript:location.href='drinks.html'">
@@ -26,7 +26,7 @@
 					<li class='nonactive' class='hoverable'>
 						<div>Food</div>
 					</li>
-					<li class='nonactive' class='hoverable' onclick="javascript:location.href='gallery.html'">
+					<li class='active' class='hoverable'>
 						<div>Gallery</div>
 					</li>
 					<li class='nonactive' class='hoverable'>
@@ -44,15 +44,17 @@
 			<!-- main webpage content -->
 			<div id='main_content'>
 				<!-- Heading -->
-				<h1>Home</h1>
-
-				<!--Content-->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae sem lobortis, convallis mauris a, ultricies velit. Nulla facilisi. Integer ut odio eleifend, suscipit elit iaculis, sollicitudin diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla in erat feugiat, feugiat massa quis, feugiat massa. Sed eu magna dapibus, adipiscing tortor in, cursus velit. Fusce sed leo non est consequat posuere vel sit amet metus. Nulla nec suscipit mauris.</p>
-
-				<!-- Inline Image -->
-				<img class='inline_image_left' src='./images/Mascot.jpg'>
-				<p>Fusce rhoncus commodo euismod. Vestibulum eu imperdiet nulla, et dapibus massa. Praesent tristique auctor massa, vehicula posuere risus interdum vel. Nullam posuere sem nec risus pharetra posuere. Aenean leo velit, pharetra ut nunc nec, semper interdum mauris. Donec rhoncus lorem quam, a sollicitudin neque molestie nec.</p>
-
+				<h1>Gallery</h1>
+				<!-- Gallery Selection -->
+				<div id='gallery_selection'>
+					<a href="contact.html">The Gnome</a> 
+					<a href="contact.html">The Bands</a>
+					<a href="contact.html">The People</a>
+				</div>
+				<br>
+				<!-- Gallery -->
+				<div id='gallery'>
+				</div>
 			</div>
 			<!-- Bottom Frame, maybe Facebook, twitter, Google+, Contact us -->
 			<div id='bottom_frame'>

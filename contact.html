@@ -26,7 +26,7 @@
 					<li class='nonactive' class='hoverable'>
 						<div>Food</div>
 					</li>
-					<li class='nonactive' class='hoverable'>
+					<li class='nonactive' class='hoverable' onclick="javascript:location.href='gallery.html'">
 						<div>Gallery</div>
 					</li>
 					<li class='nonactive' class='hoverable'>
@@ -54,20 +54,29 @@
 					<form action='./submit.php' method='get'>
 						<fieldset>
 							<p>
-							<label class='feild_label'>First Name: </label>
-							<input name='firstName' type='text' id='firstName' class='input_text' placeholder='John'>
+								<label class='feild_label'>First Name: </label>
+								<input name='firstName' type='text' id='firstName' class='input_text' placeholder='John'>
 							</p>
 							<p>
-							<label class='feild_label'>Last Name: </label>
-							<input name='lastName' type='text' id='lastName' class='input_text' placeholder='Smith'>
+								<label class='feild_label'>Last Name: </label>
+								<input name='lastName' type='text' id='lastName' class='input_text' placeholder='Smith'>
 							</p>
 							<p>
-							<label class='feild_label'>Return Address: </label>
-							<input name='userAddress' type='text' id='userAddress' class='input_text' placeholder='j.smith@hotmail.com'>
+								<label class='feild_label'>Return Address: </label>
+								<input name='userAddress' type='text' id='userAddress' class='input_text' placeholder='j.smith@hotmail.com'>
 							</p>
 							<p>
-							<label class='feild_label'>Subject: </label>
-							<input name='subject' type='text' id='subject' class='input_text' placeholder='Infusion Idea'>
+								<label class='feild_label'>Subject: </label>
+								<input name='subject' type='text' id='subject' class='input_text' placeholder='Infusion Idea'>
+							</p>
+							<p>
+								<label class='feild_label'>Infusion: </label>
+								<select name="infusion" id='vote_box' class='input_drop_box'>
+									<option value="NA">Not Voting</option>
+									<option value="1">Lil Pip</option>
+									<option value="2">Phat Pengui</option>
+									<option value="3">The Slide</option>
+								</select>
 							</p>
 							<p>
 							<textarea name="content" rows='6' cols='60' placeholder='Write your message here. Then click the Submit button.'></textarea>

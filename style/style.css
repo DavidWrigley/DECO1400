@@ -56,6 +56,10 @@ p.button_paragraph{
 	text-align: center;
 }
 
+a{
+	color: red;
+}
+
 /*
 IMAGES
  */
@@ -226,6 +230,15 @@ button.input_submit{
 	text-align: center;
 }
 
+select{
+	width: 30%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 24;
+	padding: 6px;
+	float: left;
+	text-align: left;
+}
+
 textarea{
 	resize: none;
 	width: 100%;
@@ -287,6 +300,20 @@ div#main_content{
 	padding-top: 10px;
 	padding-bottom: 20px;
 	overflow: auto;
+}
+
+div#gallery_selection{
+	text-align: center;
+	width: 100%;
+}
+
+div#gallery{
+	background-image: url('../images/7_garden_gnomes.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 120%;
+	width: 100%;
+	height: 600px;
 }
 
 div#form_div{
