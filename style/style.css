@@ -12,8 +12,9 @@ TEXT
 body{
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
 	padding: 0 0px;
-	margin: 0;
-	min-width: 1000px;
+	margin: 0 auto;
+	min-width: 900px;
+	max-width: 1400px;
 	font-size: 24;
 	background-color: rgb(249,238,222);
 	/*background-image: url('../images/natural-canvas-pale.jpg');*/
