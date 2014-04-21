@@ -104,9 +104,9 @@ img.inline_image_right{
 
 img.product_image_centre{
 	margin: 0 auto;
-	padding: 20px;
-	height: 400px;
-	width: auto;
+	padding: 10px;
+	height: auto;
+	max-width: 200px;
 }
 
 /*
@@ -323,7 +323,7 @@ div#form_div{
 
 div#productdiv{
 	border-top: 1px dashed black;
-	overflow: auto;
+	overflow: hidden;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
