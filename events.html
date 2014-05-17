@@ -13,12 +13,13 @@
 		<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css' />
 		<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
 		<script src='./javascript/js.js' type='text/javascript'></script>
+		<script src="./javascript/jquery.slides.js"></script>
 	</head>
 	<!-- BODY -->
 	<body>
 		<!-- Main Container -->
 		<div id='container'>
-			<div id='heading' style="background-image: url('./images/Index_banner.jpg');"> 
+			<div id='heading' style="background-image: url('./images/event_banner.jpg');"> 
 				<!-- put in a background image -->
 				The Gnome
 			</div>
@@ -27,7 +28,7 @@
 				<div id='divnav'>
 					<!-- add a list element -->
 					<ul id='navigation'>
-						<li class='active hoverable'>
+						<li class='nonactive hoverable' onclick="javascript:location.href='index.html'">
 							<div>Home</div>
 						</li>
 						<li class='nonactive hoverable' onclick="javascript:location.href='drinks.html'">
@@ -39,7 +40,7 @@
 						<li class='nonactive hoverable' onclick="javascript:location.href='gallery.html'">
 							<div>Gallery</div>
 						</li>
-						<li class='nonactive hoverable' onclick="javascript:location.href='events.html'">
+						<li class='active hoverable'>
 							<div>Events</div>
 						</li>
 						<li class='nonactive hoverable' onclick="javascript:location.href='contact.html'">
@@ -51,14 +52,48 @@
 			<!-- main webpage content -->
 			<div id='main_content'>
 				<!-- Heading -->
-				<h1>Home</h1>
+				<h1>Events</h1>
 
-				<!--Content-->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae sem lobortis, convallis mauris a, ultricies velit. Nulla facilisi. Integer ut odio eleifend, suscipit elit iaculis, sollicitudin diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla in erat feugiat, feugiat massa quis, feugiat massa. Sed eu magna dapibus, adipiscing tortor in, cursus velit. Fusce sed leo non est consequat posuere vel sit amet metus. Nulla nec suscipit mauris.</p>
+				<p>Thursdays nights are our &quot;Orate&quot; night. An open mic for anyone who works with the spoken word, poets, comedians, speakers of any kind. If the audience love you, they&#39;ll let you know. If they don&#39;t, you&#39;re outta there.</p>
 
-				<!-- Inline Image -->
-				<img class='inline_image_left' src='./images/Mascot.jpg' alt='The Gnomes Mascot' />
-				<p>Fusce rhoncus commodo euismod. Vestibulum eu imperdiet nulla, et dapibus massa. Praesent tristique auctor massa, vehicula posuere risus interdum vel. Nullam posuere sem nec risus pharetra posuere. Aenean leo velit, pharetra ut nunc nec, semper interdum mauris. Donec rhoncus lorem quam, a sollicitudin neque molestie nec.</p>
+				<p>Saturday night and Sunday afternoons we host live music. we&#39;ll have a rolling roster of regular acts.</p>
+
+				<h3>This Weekend!</h3>
+				<p>&#8226; Heavenly Beard - Saturday 6:30PM 17th May<br>
+				&#8226; Blue's Chews - Sunday 4:30PM 18th May<br></p>
+				<h3>Next Weekend!</h3>
+				<p>&#8226; Low Flying Unladen European Swallow (LFUES) - Saturday 5:00PM 25th May<br>
+				&#8226; Shrecked! - Sunday 4:00PM 25th May</p>
+
+				<p>Sunday afternoons will be our unplugged night for a chilled acoustic after</p>
+				<br>
+				
+				<div class='productdiv'>
+				</div>
+
+				<!--SLide's-->
+				<div id="slides" class="slides">
+				    <img src='./images/gallery/1.jpg' alt='band picture'>
+
+				    <img src='./images/gallery/2.jpg' alt='band picture'>
+
+				    <img src='./images/gallery/4.jpg' alt='band picture'>
+
+				    <img src='./images/gallery/5.jpg' alt='band picture'>
+				    
+				    <a href="#" class="slidesjs-previous slidesjs-navigation">&#60;<i class="icon-chevron-left"></i></a>
+     				<a href="#" class="slidesjs-next slidesjs-navigation">&#62;<i class="icon-chevron-right"></i></a>
+				</div>
+				<br>
+
+				<div class='productdiv'>
+				</div>
+
+				<p>Know a band who suites our style, get them in contact with us, make sure to use the <a href="contact.html">Contact Page</a></p>
+				<br>
+
+				<div class='productdiv'>
+				</div>
 
 			</div>
 			<!-- Bottom Frame, maybe Facebook, twitter, Google+, Contact us -->

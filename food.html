@@ -1,4 +1,4 @@
-<!-- HTML -->
+<!DOCTYPE html>
 <!-- Tutor Simon Hales simon.hales@uqconnect.edu.au -->
 <html>
 	<!-- HEAD -->
@@ -7,113 +7,213 @@
 		<!--
 		<link rel='stylesheet' type='text/css' href='./style/reset.css' media='screen,projection'/>
 		-->
-		<link rel='stylesheet' type='text/css' href='./style/style.css' media='screen,projection'/>
+		<link rel='stylesheet' type='text/css' href='./style/style.css' media='all'/>
 		<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+		<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
+		<script src='./javascript/js.js' type='text/javascript'></script>
 	</head>
 	<!-- BODY -->
 	<body>
 		<!-- Main Container -->
 		<div id='container'>
+			<div id='heading' style="background-image: url('./images/Food_banner.jpg');"> 
+				<!-- put in a background image -->
+				The Gnome
+			</div>
 			<!-- main website naviation -->
 			<div id='divnav'>
 				<!-- add a list element -->
 				<ul id='navigation'>
-					<li class='nonactive' class='hoverable' onclick="javascript:location.href='index.html'">
+					<li class='nonactive hoverable' onclick="javascript:location.href='index.html'">
 						<div>Home</div>
 					</li>
-					<li class='nonactive' class='hoverable' onclick="javascript:location.href='drinks.html'">
+					<li class='nonactive hoverable' onclick="javascript:location.href='drinks.html'">
 						<div>Drinks</div>
 					</li>
-					<li class='active' class='hoverable'>
+					<li class='active hoverable'>
 						<div>Food</div>
 					</li>
-					<li class='nonactive' class='hoverable' onclick="javascript:location.href='gallery.html'">
+					<li class='nonactive hoverable' onclick="javascript:location.href='gallery.html'">
 						<div>Gallery</div>
 					</li>
-					<li class='nonactive' class='hoverable'>
+					<li class='nonactive hoverable' onclick="javascript:location.href='events.html'">
 						<div>Events</div>
 					</li>
-					<li class='nonactive' class='hoverable' onclick="javascript:location.href='contact.html'">
+					<li class='nonactive hoverable' onclick="javascript:location.href='contact.html'">
 						<div>Contact</div>
 					</li>
 				</ul>
-			</div>
-			<div id='heading'>
-				<!-- put in a background image -->
-				The Gnome
 			</div>
 			<!-- main webpage content -->
 			<div id='main_content'>
 				<!-- Heading -->
 				<h1>Food</h1>
-				<p><p>
+				<p>Food is an incredibly important part of our drinking culture here at The Gnome, its even better when all our food is hand made and sourced from local ingredients of the highest quality</p>
+				<br>
 
-				<div id='productdiv'>
+				<div class='productdiv'>
 					<h2>Small Bites</h2>
-					<p>Snacks to enjoy on your own or with a significant other</p>
+					<p>A small snacks to enjoy on your own or with a significant other, perfect for a starter.</p>
+					<br>
 				</div>
 
 				<!-- Product div, this should be replicated for each new product added -->
-				<div id='productdiv'>
+				<div class='productdiv'>
 					<!-- Product Content -->
-					<div id='productcontent'>
+					<div class='productcontent'>
 						<h2>Pistachios</h2>
 						<p>Simple as it gets, salted pistachios, a must have for any bar worth its salt.</p>
-						<h2>Cost: $5.00</h2>
+						<h3>Cost: $5.00</h3>
 					</div>
 					<!-- Product Image -->
-					<div id='productimage' style="background-image: url('./images/roasted_pistachios_salted__1.jpg');">
-						<img class='food_image_centre' src="./images/roasted_pistachios_salted__1.jpg">
+					<div class='productimage' style="background-image: url('./images/roasted_pistachios_salted__1.jpg');">
 					</div>
 				</div>	
 
-				<div id='productdiv'>
+				<div class='productdiv'>
 					<!-- Product Content -->
-					<div id='productcontent'>
+					<div class='productcontent'>
 						<h2>Fresh cut chips, garlic aioli  </h2>
-						<p>Delishious golden chips fried to perfection with a tangi garlic and mayonaise aioli, wonderful with Two Birds Golden Ale.</p>
-						<h2>Cost: $9.00</h2>
+						<p>Delicious golden chips fried to perfection with a tangy garlic and mayonnaise aioli, wonderful with Two Birds Golden Ale.</p>
+						<h3>Cost: $9.00</h3>
 					</div>
 					<!-- Product Image -->
-					<div id='productimage' style="background-image: url('./images/8062168789_db87841b18_c.jpg');">
-						<img class='food_image_centre' src="./images/8062168789_db87841b18_c.jpg">
+					<div class='productimage' style="background-image: url('./images/8062168789_db87841b18_c.jpg');">
 					</div>
 				</div>
 
-				<div id='productdiv'>
+				<div class='productdiv'>
 					<!-- Product Content -->
-					<div id='productcontent'>
+					<div class='productcontent'>
 						<h2>Sweet potato chips, chipotle mayo</h2>
-						<p>Sweet potato from the local markets, cut thin and fryed chrispy with a beautiful chipotle mayonaise.</p>
-						<h2>Cost: $10.00</h2>
+						<p>Sweet potato from the local markets, cut thin and frayed crispy with a beautiful chipotle mayonnaise.</p>
+						<h3>Cost: $10.00</h3>
 					</div>
 					<!-- Product Image -->
-					<div id='productimage' style="background-image: url('./images/sweet_potato.jpg');">
-						<img class='food_image_centre' src="./images/sweet_potato.jpg">
+					<div class='productimage' style="background-image: url('./images/sweet_potato.jpg');">
 					</div>
 				</div>
 
-				<div id='productdiv'>
+				<div class='productdiv'>
 					<!-- Product Content -->
-					<div id='productcontent'>
+					<div class='productcontent'>
 						<h2>Marinated mt zero olives</h2>
 						<p>These olives have a twist of flavor and spice that will have you coming back for more.</p>
-						<h2>Cost: $8.00</h2>
+						<h3>Cost: $8.00</h3>
 					</div>
 					<!-- Product Image -->
-					<div id='productimage' style="background-image: url('./images/olives-manchego-cl-1598608-l.jpg');">
-						<img class='food_image_centre' src="./images/olives-manchego-cl-1598608-l.jpg">
+					<div class='productimage' style="background-image: url('./images/olives-manchego-cl-1598608-l.jpg');">
 					</div>
 				</div>
-				 				
 
-				<div id='productdiv'>
-					<div id='productcontent'>
-
+				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>Grilled chorizo</h2>
+						<p>Fat locally made chorizo, grilled on the barbecue till scored and dripping with flavor.</p>
+						<h3>Cost: $9.00</h3>
 					</div>
-					<div id='productimage'>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/grilled_chirizo.jpg');">
+					</div>
+				</div>	
+
+				<div class='productdiv'>
+					<h2>Shared Bites</h2>
+					<p>That perfect starter for a group of people.</p>
+					<br>
+				</div>	
+				
+				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>Cheese and bacon croquettes</h2>
+						<p>Fat croquettes, filled with feta cheese and crispy bacon.</p>
+						<h3>Cost: $12.50</h3>
+					</div>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/cheese_bacon.jpg');">
+					</div>
+				</div>	
+	 
+				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>Spiced red lentil Dahl, yogurt, grilled flat bread</h2>
+						<p>Deliriously spiced lentils in an rich Indian Dahl, with a side of yogurt and traditional flat bread.</p>
+						<h3>Cost: $15.00</h3>
+					</div>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/Littlecreatures2.jpg');">
+					</div>
+				</div>	
+
+				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>Beetroot, freekeh, almonds, goats cheese salad</h2>
+						<p>Fat croquettes, filled with feta cheese and crispy bacon.</p>
+						<h3>Cost: $15.50</h3>
+					</div>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/beet-and-goat-cheese.jpg');">
+					</div>
+				</div>	
+
+				 
+				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>BBQ lamb ribs</h2>
+						<p>Succulent lamb ribs, barbecued to perfection with a smooth coating of zesty sauce</p>
+						<h3>Cost: $16.00 </h3>
+					</div>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/Grilled-Lamb-Ribs.jpg');">
+					</div>
+				</div>	
+ 
+				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>Pulled pork sliders</h2>
+						<p>Juicy pork burger filled with flavor and mouthwatering herb mix, perfect for a long night of drinking</p>
+						<h3>Cost: $16.00</h3>
+					</div>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/porkburger.jpg');">
+					</div>
+				</div>	
+ 
+				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>Jamon, salami, pickles, cheese plate</h2>
+						<p>Local produces fills the plate to the brim with flavor and exciting combinations.</p>
+						<h3>Cost: $18.00</h3>
+					</div>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/share_plate.jpg');">
+					</div>
+				</div>	
+
+ 				<div class='productdiv'>
+					<!-- Product Content -->
+					<div class='productcontent'>
+						<h2>House cured salmon, citrus, watercress, grissini</h2>
+						<p>Salmon cured for 40 days, served with fresh watercress grissini and a sprinkle of citrus juice</p>
+						<h3>Cost: $18.00</h3>
+					</div>
+					<!-- Product Image -->
+					<div class='productimage' style="background-image: url('./images/celebrity-salmon-600-6600 (1).jpg');">
+					</div>
+				</div>	
+
+				<div class='productdiv'>
+					<div class='productcontent'>
+
 					</div>
 				</div>
 			</div>
@@ -126,11 +226,11 @@
 					University of Queenaland<br>
 				</div>
 				<div id='bottom_share'>
-					<img class='share_icons' src='./images/twitter.png'></img>
-					<img class='share_icons' src='./images/Facebook.png'></img>
-					<img class='share_icons' src='./images/Tumblr.png'></img>
-					<img class='share_icons' src='./images/Google+.png'></img>
-					<img class='share_icons' src='./images/reddit.png'></img>
+					<img class='share_icons' src='./images/twitter.png' alt='Twitter' />
+					<img class='share_icons' src='./images/Facebook.png' alt='Facebook' />
+					<img class='share_icons' src='./images/Tumblr.png' alt='Tumblr' />
+					<img class='share_icons' src='./images/Google+.png' alt='Google+' />
+					<img class='share_icons troll' src='./images/reddit.png' alt='Reddit' />
 				</div>
 			</div>
 		</div>
