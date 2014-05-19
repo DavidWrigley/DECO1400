@@ -17,10 +17,6 @@ body{
 	max-width: 1400px;
 	font-size: 20px;
 	background-color: rgb(249,238,222);
-	/*background-image: url('../images/natural-canvas-pale.jpg');*/
-	/*background-image: url('../images/sprinkles.png');*/
-	/*background-image: url('../images/grey_wash_wall.png');*/
-	/*should implement a backup background colour, incase image fails to load */
 	background-image: url('../images/tileable_wood_texture.png');
 }
 
@@ -83,10 +79,6 @@ IMAGES
  */
 img {
 	display: block;
-	/*
-	min-height: 400px;
-	*/
-	min-width: (1000px * .8);
     max-width: 100%;
     height: auto;
 }
@@ -102,9 +94,6 @@ img.share_icons{
 img.inline_image_left{
 	margin: 0px;
 	padding: 20px;
-	/*
-	padding-bottom: 5px;
-	*/
 	height: 400px;
 	width: auto;
 	float: left;
@@ -113,9 +102,6 @@ img.inline_image_left{
 img.inline_image_right{
 	margin: 0px;
 	padding: 20px;
-	/*
-	padding-bottom: 5px;
-	*/
 	height: 400px;
 	width: auto;
 	float: right;
@@ -123,9 +109,6 @@ img.inline_image_right{
 
 img.product_image_centre{
 	margin: 0 auto;
-	/*
-	padding: 10px;
-	*/
 	height: auto;
 	max-width: 200px;
 }
@@ -146,7 +129,7 @@ ul#navigation{
 	padding: 0px;
 	display: table;
 	width: 100%;
-	font-size: 24;
+	font-size: 24px;
 	/* need the multi def's for different browsers */
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -182,7 +165,7 @@ li{
 	display: table-cell;
 	list-style-type: none;
 	font-family: 'Swanky and Moo Moo', cursive;
-	font-size: 24;
+	font-size: 24px;
 	font-weight: bold;
 	padding: 0 0 0 0;
 	width: 16.666%;
@@ -237,7 +220,7 @@ label.feild_label{
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: boarder-box;
+	box-sizing: border-box;
 	text-align: right;
 	width: 40%;
 	float: left;
@@ -250,7 +233,7 @@ Inputs
 input.input_text{
 	width: 50%;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
-	font-size: 20;
+	font-size: 20px;
 	padding: 8px;
 	float: left;
 	text-align: left;
@@ -260,7 +243,7 @@ input.input_text{
 
 button.input_submit{
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
-	font-size: 24;
+	font-size: 24px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
@@ -269,7 +252,7 @@ button.input_submit{
 input.select{
 	width: 30%;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
-	font-size: 20;
+	font-size: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	float: left;
@@ -280,7 +263,7 @@ textarea{
 	resize: none;
 	width: 100%;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
-	font-size: 24;
+	font-size: 24px;
 	text-align: left;
 	float: left;
 }
@@ -298,9 +281,6 @@ div#container{
 	height: auto;
 	margin: 0 auto;
 	background-color: #1B1914;
-	/*
-	#999
-	 */
 	box-shadow: 7px 0px 9px -5px rgba(0,0,0,.3), -7px 0px 9px -5px rgba(0,0,0,.3);
 }
 
@@ -324,22 +304,16 @@ div#heading{
 	height: 300px;
 	color: rgb(247,120,37);
 	font-family: 'Swanky and Moo Moo', cursive;
-	/*
-	text-decoration: underline;
-	*/
 	line-height: 420px;
 	font-size: 5em;
 	margin: 0;
 }
 
 div#main_content{
-	/*background-image: url('../images/textured_paper.png');*/
-	/*background-image: url('../images/old_moon.png');*/
 	background-color: rgb(233,233,233);
 	background-image: url('../images/concrete_wall_3.png');
 	text-align: left;
-	margin: 0;
-	width: (100% - (padding * 2)px);
+	width: calc(100% - 159px);
 	padding: 80px;
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -376,7 +350,7 @@ div.productcontent{
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: boarder-box;
+	box-sizing: border-box;
 	float: left;
 	margin: 0;
 	padding-right: 20px;
@@ -388,14 +362,11 @@ div.productimage{
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: boarder-box;
+	box-sizing: border-box;
 	background: rgba(255,255,255,1);
 	float: right;
 	width: 40%;
 	height: 350px;
-	/*
-	box-shadow: inset 0px 0px 30px 20px rgba(255,255,255,1);
-	*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 230%;
@@ -406,14 +377,11 @@ div.beerimage{
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: boarder-box;
+	box-sizing: border-box;
 	background: rgba(255,255,255,1);
 	float: right;
 	width: 40%;
 	height: 350px;
-	/*
-	box-shadow: inset 0px 0px 30px 20px rgba(255,255,255,1);
-	*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 30%;
@@ -466,4 +434,4 @@ label.error {
 	display: block;
 	clear: both;
 	float: right;
-}​
+}

@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 	/**
 	 * Initilises the jQuery validate pugin (a free open source plugin for form
-	 * managment)
+	 * managment and validation)
 	 * @return {[NONE]}
 	 */
 	$(function(){
@@ -79,6 +79,8 @@ $(document).ready(function(){
 	 */
 	$(".troll").click(function(){
 		console.log("comics sans lol");
+		// yeah this is messy, should have just used inheritance better in css
+		// next time =)
 		$("body").css("font-family", "\'Comic Sans MS\'");
 		$("h1").css("font-family", "\'Comic Sans MS\'");
 		$("h2").css("font-family", "\'Comic Sans MS\'");
