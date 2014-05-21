@@ -5,6 +5,16 @@
 $(document).ready(function(){
 
 	/**
+	 * function to change the page on click from html
+	 * ran out of time to implement this across all pages, is in index.html
+	 * @return {[NONE]}
+	 */ 
+	$.fn.changePage = function(pageAddr){
+		// set the location to the parsed pageaddr
+		location.href=pageAddr;
+	};
+
+	/**
 	 * Initlise Slidesjs (a free open source javascript image slider)
 	 * This function is called for every initlised slide
 	 * @return {[NONE]}
